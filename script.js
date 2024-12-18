@@ -1,9 +1,7 @@
 chrome.storage.sync.get('dubbing').then((data) => {
   console.log('dd', data);
   if (data.dubbing === undefined) {
-    chrome.storage.sync.set({ dubbing: true }, function () {
-      console.log('se guardo');
-    });
+    chrome.storage.sync.set({ dubbing: true });
   } else {
     console.log('check', data.dubbing);
     if (data.dubbing) {

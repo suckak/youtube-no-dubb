@@ -10,8 +10,6 @@
   "host_permissions": ["http://*/youtube*", "https://*/youtube*"],
   "permissions": [
     "scripting",
-    "activeTab",
-    "tabs",
     "http://*/youtube*",
     "https://*/youtube*",
     "storage"
