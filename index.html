@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YT Dubb</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    h1,
+    p {
+      text-align: center;
+    }
+
+    p {
+      min-width: 300px;
+    }
+
+    .info {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .info label {
+      margin-right: 10px;
+    }
+
+    /* The switch - the box around the slider */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: '';
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    input:checked + .slider {
+      background-color: #2196f3;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196f3;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    .social-footer {
+      background: #333;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 5px;
+    }
+
+    .social-footer img {
+      width: 30px;
+    }
+    .social-footer p {
+      width: auto;
+      text-align: left;
+      font-weight: bold;
+      font-size: 1em;
+      color: white;
+    }
+    .social-footer .social-footer-icons ul {
+      display: flex;
+      list-style: none;
+    }
+    .social-footer .social-footer-icons li {
+      margin-right: 1.5em;
+    }
+    .social-footer .social-footer-icons li:last-of-type {
+      margin-right: 0;
+    }
+  </style>
+  <body>
+    <h1>Youtube No Dubbing</h1>
+    <p class="info">
+      <label class="switch">
+        <input type="checkbox" id="checkbox" />
+        <span class="slider round"></span> </label
+      >Select original Audio track for youtube videos when available
+    </p>
+    <footer class="social-footer">
+      <div class="social-footer-left">
+        <p>Daniel Gutiérrez</p>
+      </div>
+      <div class="social-footer-icons">
+        <ul class="menu simple">
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/daniel-guti%C3%A9rrez-leal-5b1293a4/"
+            >
+              <img src="linkedin.png" alt="linkedin" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/suckak" target="_blank">
+              <img src="github.png" alt="github" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/suckak" target="_blank">
+              <img src="twitter.png" alt="twitter" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+
+  <script src="script.js"></script>
+</html>

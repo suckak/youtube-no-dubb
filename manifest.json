@@ -1,0 +1,32 @@
+{
+  "name": "Youtube No Dubbing",
+  "description": "Set the original audiotrack for youtube videos with dubbing",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "logo.png"
+  },
+  "host_permissions": ["http://*/youtube*", "https://*/youtube*"],
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs",
+    "http://*/youtube*",
+    "https://*/youtube*",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["inject.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "logo.png",
+    "32": "logo32.png",
+    "48": "logo48.png",
+    "128": "logo128.png"
+  }
+}
